@@ -1,0 +1,442 @@
+!doctype 
+html> 
+ 
+    <style> 
+        th, td, p, input { 
+            font:16px Verdana; 
+        } 
+        table, th, td  
+        { 
+            border: solid 2px #DDD; 
+            border-collapse: collapse; 
+            padding: 2px 3px; 
+            text-align: center; 
+        } 
+        th { 
+            font-weight:bold; 
+        } 
+    </style> 
+ 
+<hr /> 
+<h1 style="text-align: center;"><img alt="Image result for rap image" src="data:image/jpeg;base64,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" /></h1> 
+ 
+<h1 style="text-align: center;">Find Your Artist</h1> 
+ 
+<hr /> 
+ 
+ 
+<html 
+class="no-js" 
+lang=""> 
+ 
+<head> 
+ 
+<meta 
+charset="utf-8"> 
+ 
+<meta 
+name="description" 
+content=""> 
+ 
+<meta 
+name="viewport" 
+content="width=device-width, initial-scale=1"> 
+ 
+ 
+<center><title>Song Reccomendation Service</title> 
+ 
+<center></center> 
+ 
+ 
+<link 
+rel="stylesheet" 
+href="css/font.css"> 
+ 
+<link 
+rel="stylesheet" 
+href="css/main.css"> 
+ 
+ 
+</head> 
+ 
+<body 
+class="page-home"> 
+ 
+<body 
+style="background-color:deepskyblue;"> 
+ 
+ 
+<h1>Song Reccomendation Service</h1> 
+ 
+ 
+<p>Please enter up to 5 of your favorite artists from the list below:</p> 
+ 
+ 
+ 
+Artist # 1:<br> 
+ 
+<select name="a1" id="a1"> 
+<option value="Offset ">Offset </option> 
+<option value="Metro Boomin ">Metro Boomin </option> 
+<option value="Trippie Redd">Trippie Redd</option> 
+<option value="Future ">Future </option> 
+<option value="Gucci Mane ">Gucci Mane </option> 
+<option value="YG">YG</option> 
+<option value="Gunna ">Gunna </option> 
+<option value="Famous Dex">Famous Dex</option> 
+<option value="Beyonce ">Beyonce </option> 
+<option value="Ty Dolla Sign ">Ty Dolla Sign </option> 
+<option value="Tyga ">Tyga </option> 
+<option value="Quavo ">Quavo </option> 
+<option value="A$AP Rocky ">A$AP Rocky </option> 
+<option value="H.E.R">H.E.R</option> 
+<option value="DJ Khaled ">DJ Khaled </option> 
+<option value="Rick Ross ">Rick Ross </option> 
+<option value="2 Chainz">2 Chainz</option> 
+<option value="Young Thug">Young Thug</option> 
+<option value="Nas">Nas</option> 
+<option value="Notorious B.I.G">Notorious B.I.G</option> 
+<option value="Wu-Tang">Wu-Tang</option> 
+<option value="Method Man">Method Man</option> 
+<option value="Big Daddy Kane">Big Daddy Kane</option> 
+<option value="Rakim">Rakim</option> 
+<option value="Lil Kim">Lil Kim</option> 
+<option value="Common">Common</option> 
+<option value="The Roots ">The Roots </option> 
+<option value="Run DMC">Run DMC</option> 
+<option value="Kool Moe Dee">Kool Moe Dee</option> 
+<option value="LL cool J">LL cool J</option> 
+<option value="Beastie Boys">Beastie Boys</option> 
+<option value="Kurtis Blow ">Kurtis Blow </option> 
+<option value="MC Hammer ">MC Hammer </option> 
+<option value="Salt-N-Peppa">Salt-N-Peppa</option> 
+<option value="Public Enemy ">Public Enemy </option> 
+<option value="Slick Rick ">Slick Rick </option> 
+<option value="Heavy D">Heavy D</option> 
+<option value="Snoop Dogg">Snoop Dogg</option> 
+<option value="Usher">Usher</option> 
+<option value="Lil Skies ">Lil Skies </option> 
+<option value="A Boogie ">A Boogie </option> 
+<option value="Roddy Ricch">Roddy Ricch</option> 
+<option value="Calboy">Calboy</option> 
+<option value="PNB Rock">PNB Rock</option> 
+<option value="Summer Walker">Summer Walker</option> 
+<option value="Polo G">Polo G</option> 
+<option value="Blueface">Blueface</option> 
+<option value="Chief Keef">Chief Keef</option> 
+<option value="Willtharapper">Willtharapper</option> 
+<option value="Chance the Rapper">Chance the Rapper</option> 
+<option value="Fetty Wap">Fetty Wap</option> 
+<option value="Hoodrich Pablo Juan">Hoodrich Pablo Juan</option> 
+<option value="Monrybagg Yo">Monrybagg Yo</option> 
+<option value="Shy Glizzy">Shy Glizzy</option> 
+</select><br> 
+ 
+Artist #2<br> 
+ 
+<select name="a2" id="a2"> 
+<option value="Offset ">Offset </option> 
+<option value="Metro Boomin ">Metro Boomin </option> 
+<option value="Trippie Redd">Trippie Redd</option> 
+<option value="Future ">Future </option> 
+<option value="Gucci Mane ">Gucci Mane </option> 
+<option value="YG">YG</option> 
+<option value="Gunna ">Gunna </option> 
+<option value="Famous Dex">Famous Dex</option> 
+<option value="Beyonce ">Beyonce </option> 
+<option value="Ty Dolla Sign ">Ty Dolla Sign </option> 
+<option value="Tyga ">Tyga </option> 
+<option value="Quavo ">Quavo </option> 
+<option value="A$AP Rocky ">A$AP Rocky </option> 
+<option value="H.E.R">H.E.R</option> 
+<option value="DJ Khaled ">DJ Khaled </option> 
+<option value="Rick Ross ">Rick Ross </option> 
+<option value="2 Chainz">2 Chainz</option> 
+<option value="Young Thug">Young Thug</option> 
+<option value="Nas">Nas</option> 
+<option value="Notorious B.I.G">Notorious B.I.G</option> 
+<option value="Wu-Tang">Wu-Tang</option> 
+<option value="Method Man">Method Man</option> 
+<option value="Big Daddy Kane">Big Daddy Kane</option> 
+<option value="Rakim">Rakim</option> 
+<option value="Lil Kim">Lil Kim</option> 
+<option value="Common">Common</option> 
+<option value="The Roots ">The Roots </option> 
+<option value="Run DMC">Run DMC</option> 
+<option value="Kool Moe Dee">Kool Moe Dee</option> 
+<option value="LL cool J">LL cool J</option> 
+<option value="Beastie Boys">Beastie Boys</option> 
+<option value="Kurtis Blow ">Kurtis Blow </option> 
+<option value="MC Hammer ">MC Hammer </option> 
+<option value="Salt-N-Peppa">Salt-N-Peppa</option> 
+<option value="Public Enemy ">Public Enemy </option> 
+<option value="Slick Rick ">Slick Rick </option> 
+<option value="Heavy D">Heavy D</option> 
+<option value="Snoop Dogg">Snoop Dogg</option> 
+<option value="Usher">Usher</option> 
+<option value="Lil Skies ">Lil Skies </option> 
+<option value="A Boogie ">A Boogie </option> 
+<option value="Roddy Ricch">Roddy Ricch</option> 
+<option value="Calboy">Calboy</option> 
+<option value="PNB Rock">PNB Rock</option> 
+<option value="Summer Walker">Summer Walker</option> 
+<option value="Polo G">Polo G</option> 
+<option value="Blueface">Blueface</option> 
+<option value="Chief Keef">Chief Keef</option> 
+<option value="Willtharapper">Willtharapper</option> 
+<option value="Chance the Rapper">Chance the Rapper</option> 
+<option value="Fetty Wap">Fetty Wap</option> 
+<option value="Hoodrich Pablo Juan">Hoodrich Pablo Juan</option> 
+<option value="Monrybagg Yo">Monrybagg Yo</option> 
+<option value="Shy Glizzy">Shy Glizzy</option> 
+</select><br> 
+ 
+Artist #3<br> 
+ 
+<select name="a3" id="a3"> 
+        <option value="Offset ">Offset </option> 
+        <option value="Metro Boomin ">Metro Boomin </option> 
+        <option value="Trippie Redd">Trippie Redd</option> 
+        <option value="Future ">Future </option> 
+        <option value="Gucci Mane ">Gucci Mane </option> 
+        <option value="YG">YG</option> 
+        <option value="Gunna ">Gunna </option> 
+        <option value="Famous Dex">Famous Dex</option> 
+        <option value="Beyonce ">Beyonce </option> 
+        <option value="Ty Dolla Sign ">Ty Dolla Sign </option> 
+        <option value="Tyga ">Tyga </option> 
+        <option value="Quavo ">Quavo </option> 
+        <option value="A$AP Rocky ">A$AP Rocky </option> 
+        <option value="H.E.R">H.E.R</option> 
+        <option value="DJ Khaled ">DJ Khaled </option> 
+        <option value="Rick Ross ">Rick Ross </option> 
+        <option value="2 Chainz">2 Chainz</option> 
+        <option value="Young Thug">Young Thug</option> 
+        <option value="Nas">Nas</option> 
+        <option value="Notorious B.I.G">Notorious B.I.G</option> 
+        <option value="Wu-Tang">Wu-Tang</option> 
+        <option value="Method Man">Method Man</option> 
+        <option value="Big Daddy Kane">Big Daddy Kane</option> 
+        <option value="Rakim">Rakim</option> 
+        <option value="Lil Kim">Lil Kim</option> 
+        <option value="Common">Common</option> 
+        <option value="The Roots ">The Roots </option> 
+        <option value="Run DMC">Run DMC</option> 
+        <option value="Kool Moe Dee">Kool Moe Dee</option> 
+        <option value="LL cool J">LL cool J</option> 
+        <option value="Beastie Boys">Beastie Boys</option> 
+        <option value="Kurtis Blow ">Kurtis Blow </option> 
+        <option value="MC Hammer ">MC Hammer </option> 
+        <option value="Salt-N-Peppa">Salt-N-Peppa</option> 
+        <option value="Public Enemy ">Public Enemy </option> 
+        <option value="Slick Rick ">Slick Rick </option> 
+        <option value="Heavy D">Heavy D</option> 
+        <option value="Snoop Dogg">Snoop Dogg</option> 
+        <option value="Usher">Usher</option> 
+        <option value="Lil Skies ">Lil Skies </option> 
+        <option value="A Boogie ">A Boogie </option> 
+        <option value="Roddy Ricch">Roddy Ricch</option> 
+        <option value="Calboy">Calboy</option> 
+        <option value="PNB Rock">PNB Rock</option> 
+        <option value="Summer Walker">Summer Walker</option> 
+        <option value="Polo G">Polo G</option> 
+        <option value="Blueface">Blueface</option> 
+        <option value="Chief Keef">Chief Keef</option> 
+        <option value="Willtharapper">Willtharapper</option> 
+        <option value="Chance the Rapper">Chance the Rapper</option> 
+        <option value="Fetty Wap">Fetty Wap</option> 
+        <option value="Hoodrich Pablo Juan">Hoodrich Pablo Juan</option> 
+        <option value="Monrybagg Yo">Monrybagg Yo</option> 
+        <option value="Shy Glizzy">Shy Glizzy</option> 
+        </select><br> 
+ 
+ 
+Artist #4<br> 
+ 
+<select name="a4" id="a4"> 
+        <option value="Offset ">Offset </option> 
+        <option value="Metro Boomin ">Metro Boomin </option> 
+        <option value="Trippie Redd">Trippie Redd</option> 
+        <option value="Future ">Future </option> 
+        <option value="Gucci Mane ">Gucci Mane </option> 
+        <option value="YG">YG</option> 
+        <option value="Gunna ">Gunna </option> 
+        <option value="Famous Dex">Famous Dex</option> 
+        <option value="Beyonce ">Beyonce </option> 
+        <option value="Ty Dolla Sign ">Ty Dolla Sign </option> 
+        <option value="Tyga ">Tyga </option> 
+        <option value="Quavo ">Quavo </option> 
+        <option value="A$AP Rocky ">A$AP Rocky </option> 
+        <option value="H.E.R">H.E.R</option> 
+        <option value="DJ Khaled ">DJ Khaled </option> 
+        <option value="Rick Ross ">Rick Ross </option> 
+        <option value="2 Chainz">2 Chainz</option> 
+        <option value="Young Thug">Young Thug</option> 
+        <option value="Nas">Nas</option> 
+        <option value="Notorious B.I.G">Notorious B.I.G</option> 
+        <option value="Wu-Tang">Wu-Tang</option> 
+        <option value="Method Man">Method Man</option> 
+        <option value="Big Daddy Kane">Big Daddy Kane</option> 
+        <option value="Rakim">Rakim</option> 
+        <option value="Lil Kim">Lil Kim</option> 
+        <option value="Common">Common</option> 
+        <option value="The Roots ">The Roots </option> 
+        <option value="Run DMC">Run DMC</option> 
+        <option value="Kool Moe Dee">Kool Moe Dee</option> 
+        <option value="LL cool J">LL cool J</option> 
+        <option value="Beastie Boys">Beastie Boys</option> 
+        <option value="Kurtis Blow ">Kurtis Blow </option> 
+        <option value="MC Hammer ">MC Hammer </option> 
+        <option value="Salt-N-Peppa">Salt-N-Peppa</option> 
+        <option value="Public Enemy ">Public Enemy </option> 
+        <option value="Slick Rick ">Slick Rick </option> 
+        <option value="Heavy D">Heavy D</option> 
+        <option value="Snoop Dogg">Snoop Dogg</option> 
+        <option value="Usher">Usher</option> 
+        <option value="Lil Skies ">Lil Skies </option> 
+        <option value="A Boogie ">A Boogie </option> 
+        <option value="Roddy Ricch">Roddy Ricch</option> 
+        <option value="Calboy">Calboy</option> 
+        <option value="PNB Rock">PNB Rock</option> 
+        <option value="Summer Walker">Summer Walker</option> 
+        <option value="Polo G">Polo G</option> 
+        <option value="Blueface">Blueface</option> 
+        <option value="Chief Keef">Chief Keef</option> 
+        <option value="Willtharapper">Willtharapper</option> 
+        <option value="Chance the Rapper">Chance the Rapper</option> 
+        <option value="Fetty Wap">Fetty Wap</option> 
+        <option value="Hoodrich Pablo Juan">Hoodrich Pablo Juan</option> 
+        <option value="Monrybagg Yo">Monrybagg Yo</option> 
+        <option value="Shy Glizzy">Shy Glizzy</option> 
+        </select><br> 
+ 
+Artist #5<br> 
+ 
+<select name="a5" id="a5"> 
+        <option value="Offset ">Offset </option> 
+        <option value="Metro Boomin ">Metro Boomin </option> 
+        <option value="Trippie Redd">Trippie Redd</option> 
+        <option value="Future ">Future </option> 
+        <option value="Gucci Mane ">Gucci Mane </option> 
+        <option value="YG">YG</option> 
+        <option value="Gunna ">Gunna </option> 
+        <option value="Famous Dex">Famous Dex</option> 
+        <option value="Beyonce ">Beyonce </option> 
+        <option value="Ty Dolla Sign ">Ty Dolla Sign </option> 
+        <option value="Tyga ">Tyga </option> 
+        <option value="Quavo ">Quavo </option> 
+        <option value="A$AP Rocky ">A$AP Rocky </option> 
+        <option value="H.E.R">H.E.R</option> 
+        <option value="DJ Khaled ">DJ Khaled </option> 
+        <option value="Rick Ross ">Rick Ross </option> 
+        <option value="2 Chainz">2 Chainz</option> 
+        <option value="Young Thug">Young Thug</option> 
+        <option value="Nas">Nas</option> 
+        <option value="Notorious B.I.G">Notorious B.I.G</option> 
+        <option value="Wu-Tang">Wu-Tang</option> 
+        <option value="Method Man">Method Man</option> 
+        <option value="Big Daddy Kane">Big Daddy Kane</option> 
+        <option value="Rakim">Rakim</option> 
+        <option value="Lil Kim">Lil Kim</option> 
+        <option value="Common">Common</option> 
+        <option value="The Roots ">The Roots </option> 
+        <option value="Run DMC">Run DMC</option> 
+        <option value="Kool Moe Dee">Kool Moe Dee</option> 
+        <option value="LL cool J">LL cool J</option> 
+        <option value="Beastie Boys">Beastie Boys</option> 
+        <option value="Kurtis Blow ">Kurtis Blow </option> 
+        <option value="MC Hammer ">MC Hammer </option> 
+        <option value="Salt-N-Peppa">Salt-N-Peppa</option> 
+        <option value="Public Enemy ">Public Enemy </option> 
+        <option value="Slick Rick ">Slick Rick </option> 
+        <option value="Heavy D">Heavy D</option> 
+        <option value="Snoop Dogg">Snoop Dogg</option> 
+        <option value="Usher">Usher</option> 
+        <option value="Lil Skies ">Lil Skies </option> 
+        <option value="A Boogie ">A Boogie </option> 
+        <option value="Roddy Ricch">Roddy Ricch</option> 
+        <option value="Calboy">Calboy</option> 
+        <option value="PNB Rock">PNB Rock</option> 
+        <option value="Summer Walker">Summer Walker</option> 
+        <option value="Polo G">Polo G</option> 
+        <option value="Blueface">Blueface</option> 
+        <option value="Chief Keef">Chief Keef</option> 
+        <option value="Willtharapper">Willtharapper</option> 
+        <option value="Chance the Rapper">Chance the Rapper</option> 
+        <option value="Fetty Wap">Fetty Wap</option> 
+        <option value="Hoodrich Pablo Juan">Hoodrich Pablo Juan</option> 
+        <option value="Monrybagg Yo">Monrybagg Yo</option> 
+        <option value="Shy Glizzy">Shy Glizzy</option> 
+        </select><br> 
+ 
+<input 
+type="submit" 
+value="Recommend" 
+name="Submit" 
+onclick="getArtist()" 
+/> 
+ 
+ 
+ <p id="showData"></p> 
+ 
+<script language="javascript"> 
+ 
+ 
+function getArtist() 
+{ 
+    var xmlhttp = new XMLHttpRequest(); 
+    xmlhttp.onreadystatechange = function() 
+    { 
+        if (xmlhttp.readyState==4) 
+        { 
+            var header=[]; 
+            header.push("Artist"); 
+            header.push("Link"); 
+                var table = document.createElement("table"); 
+                var tr = table.insertRow(-1);    
+                for (var i = 0; i < header.length; i++) { 
+                    var th = document.createElement("th");      // TABLE HEADER. 
+                    th.innerHTML = header[i]; 
+                    tr.appendChild(th); 
+                } 
+            var data = JSON.parse(this.response) 
+                for (key in data) 
+                { 
+                tr = table.insertRow(-1); 
+                var tabCell = tr.insertCell(-1); 
+                tabCell.innerHTML = data[key][0]; 
+                var tabCell = tr.insertCell(-1); 
+                var linkstr= '<a href="'+data[key][1]+'" target="_blank"><img alt="Qries" src="https://www.bostontechjam.com/wp-content/uploads/Spotify-Logo-1030x698.jpg" width=50" height="30"></a>'; 
+                tabCell.innerHTML = linkstr; 
+                } 
+ 
+                // CREATE DYNAMIC TABLE. 
+                // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER. 
+                var divContainer = document.getElementById("showData"); 
+                divContainer.innerHTML = ""; 
+                divContainer.appendChild(table); 
+        } 
+ 
+    }; 
+ 
+    var e = document.getElementById("a1"); 
+    var strUser = "?a1="+e.options[e.selectedIndex].value;   
+    e = document.getElementById("a2"); 
+    strUser = strUser+"&a2="+e.options[e.selectedIndex].value;   
+    e = document.getElementById("a3"); 
+    strUser = strUser+"&a3="+e.options[e.selectedIndex].value;   
+    e = document.getElementById("a4"); 
+    strUser = strUser+"&a4="+e.options[e.selectedIndex].value;   
+    e = document.getElementById("a5"); 
+    strUser = strUser+"&a5="+e.options[e.selectedIndex].value;   
+    var URL = "https://f43px57gr1.execute-api.us-east-1.amazonaws.com/Prod"+strUser  
+    xmlhttp.open("GET", URL, true); 
+    xmlhttp.send(); 
+} 
+ 
+ 
+</script> 
+ 
+</body> 
+ 
+</html> 
